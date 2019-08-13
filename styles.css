@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #eeeeee;
 }
 /* Link Styles */
 
@@ -18,12 +18,16 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: white;
+}
+
+a:active {
+  color: darkgray;
 }
 
 /* Section Styles */
 
-.main-nav {
+nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -75,32 +79,48 @@ header .profile-image {
   background-color: white;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(.8) rotate(180deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   display: table;
   margin: 10px auto;
 } 
-.location {
-  background-color: #222;
-  color: yellow;
+
+.tag-experience {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 7px;
+  display: table;
+  margin: 200px auto;
 }
-.card {
+
+.location {
+  background-color: white;
+  color: black;
+}
+section {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
+  border-radius: 10px;
+  transition: all .3s;
 }
-.card:hover {
-  border-color: #ff99ff;
+section:hover {
+  border-color: black;
+}
+
+section img {
+  width: 85%;
+  padding: 10px;
 }
 
 ul.skills {
@@ -109,16 +129,83 @@ ul.skills {
 }
 
 .skills li {
+  cursor: default;
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: black;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
+.skills li:hover {
+  background: gray;
+}
+
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: darkgray;
+}
+
+.skills li:nth-child(odd):hover {
+  background: lightgray;
+}
+
+ul.interests {
+  padding: 0;
+  text-align: center;
+}
+
+.interests li {
+  cursor: default;
+  border-radius: 6px;
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.interests li:hover {
+  background: gray;
+}
+
+.interests li:nth-child(odd) {
+  background: darkgray;
+}
+
+.interests li:nth-child(odd):hover {
+  background: lightgray;
+}
+
+ul.freelance {
+  padding: 0;
+  text-align: center;
+}
+
+.freelance li {
+  cursor: default;
+  border-radius: 6px;
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.freelance li:hover {
+  background: gray;
+}
+
+.freelance li:nth-child(odd) {
+  background: darkgray;
+}
+
+.freelance li:nth-child(odd):hover {
+  background: lightgray;
+}
+
+.freelance a {
+  color: white;
 }
 
 footer {
